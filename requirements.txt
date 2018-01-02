@@ -1,0 +1,4 @@
+cmd2==0.7.8
+mechanize==0.2.5
+PySocks==1.6.5
+requests==2.18.1
