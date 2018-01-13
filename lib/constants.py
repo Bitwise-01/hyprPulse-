@@ -52,7 +52,7 @@ facebook_locked_response = ['/help/contact/']
 instagram_url = 'https://www.instagram.com/accounts/login/?force_classic_login'
 instagram_username_field = 'username'
 instagram_password_field = 'password'
-instagram_authentic_response = ['feedpagecontainer.js', 'Challenge.js']
+instagram_authentic_response = ['feedpagecontainer.js', 'Challenge.js', 'comment_likes']
 instagram_locked_response = ['FBSignupPage.js']
 
 # supported sites
