@@ -1,6 +1,6 @@
 # hyprPulse
 
-hyprPulse, an interactive brute force tool that can simultaneously attack multiple accounts, from multiple sites, using mutiple wordlists; all while staying anonymous.
+hyprPulse, an interactive brute force tool that can simultaneously attack multiple accounts, from multiple sites, using multiple wordlists; all while staying anonymous.
 
 ### Requirements
   - Kali Linux 2.0
@@ -8,15 +8,15 @@ hyprPulse, an interactive brute force tool that can simultaneously attack multip
 
 ### Installation
 ```sh
-git clone https://github.com/Ethical-H4CK3R/hyprPulse
-cd hyprPulse
-chmod +x install.sh
-./install.sh
+$ git clone https://github.com/Ethical-H4CK3R/hyprPulse
+$ cd hyprPulse
+$ chmod +x install.sh
+$ ./install.sh
 ```
 
 Start the program
 ```sh
-python pulsar.py
+$ python pulsar.py
 ```
 
 ### Demo

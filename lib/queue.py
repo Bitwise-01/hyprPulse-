@@ -6,8 +6,7 @@ class Queue(object):
  def __init__(self, size=None):
   self.queue = []
   self.size = size
-  super(Queue, self).__init__()
- 
+
  def get(self):
   return self.queue.pop(0) if self.queue else None
 
