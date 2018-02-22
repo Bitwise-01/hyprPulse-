@@ -1,3 +1,5 @@
+__Instagram part of the code isn't working at the moment; I'll fix it when I get the chance.__
+
 # hyprPulse
 
 hyprPulse, an interactive brute force tool that can simultaneously attack multiple accounts, from multiple sites, using multiple wordlists; all while staying anonymous.
