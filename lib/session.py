@@ -98,9 +98,12 @@ class Session(object):
   attempts = args[2]
   database = sqlite3.connect(database_path)
   database.cursor().execute('''UPDATE Sessions
-                         SET Queue = ?,
+                         SET Site = ?,
+                             Queue = ?,
                              Attempts = ?,
+                             Username = ?,
+                             Wordlist = ?,
                              Locked_time = ?
-                         WHERE ID = ?;''', [queue, attempts, locked, self.ID])
+                         WHERE ID = ?;''', [self.site, queue, attempts, self.username, self.wordlist, locked, self.ID])
   database.commit()
   database.close()
