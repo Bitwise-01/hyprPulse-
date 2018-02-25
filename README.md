@@ -1,4 +1,4 @@
-__Instagram part of the code isn't working at the moment; I'll fix it when I get the chance.__
+__Instagram part of the code isn't working anymore; I wrote a new program just for Instagram, it's called [InstaBurst](https://github.com/Ethical-H4CK3R/InstaBurst).__
 
 # hyprPulse
 
