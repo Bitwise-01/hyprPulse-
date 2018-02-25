@@ -125,7 +125,6 @@ class Console(Cmd, object):
    return
   return index, new_data
 
-
  def do_change_username(self, args):
   '''\n\tDescription: Change the username of a session that's within the queue
     \tUsage: change_username <id> <new_username>\n'''
@@ -137,6 +136,7 @@ class Console(Cmd, object):
   obj.username = args[1].title()
   self.session_history.append('{} {} {}'.\
   format(obj.site['name'].lower(), obj.username, obj.wordlist))
+  obj.session.username = obj.username
 
  def do_change_wordlist(self, args):
   '''\n\tDescription: Change the wordlist of a session that's within the queue & restart it
@@ -156,6 +156,7 @@ class Console(Cmd, object):
   self.session_history.append('{} {} {}'.\
   format(obj.site['name'].lower(), obj.username, obj.wordlist))
   self._sessions.queue[args[0]].reset()
+  obj.session.wordlist = obj.wordlist
   if restart:self.do_start(str(args[0]))
 
  def do_change_site(self, args):
@@ -173,7 +174,8 @@ class Console(Cmd, object):
   del self.session_history[self.session_history.index('{} {} {}'.\
   format(obj.site['name'].lower(), obj.username, obj.wordlist))]
   obj.site = sites[args[1].lower()]
-
+  
+  obj.session.site = obj.site
   self.session_history.append('{} {} {}'.\
   format(obj.site['name'].lower(), obj.username, obj.wordlist))
 
